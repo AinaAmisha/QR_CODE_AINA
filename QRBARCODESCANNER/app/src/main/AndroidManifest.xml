@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.qrbarcodescanner">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon_app"
+        android:label="Nana QR Scanner"
+        android:roundIcon="@drawable/icon_app"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.QRBARCODESCANNER">
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="false">
+        </activity>
+    </application>
+
+</manifest>
